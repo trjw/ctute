@@ -156,7 +156,7 @@ int get_queue(queue* q) {
 	  // what to do here??
 	return 0;
     }
-    int result=head->data;
+    int result=q->head->data;
     struct queue_node* temp=q->head;
     q->head=q->head->next;
     free(temp);
